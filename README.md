@@ -99,11 +99,11 @@ The form is working, but it is currently controlled by local stateful logic. We 
 
 ## Submission format
 
-- [ ] Submit via Codegrade by commiting and pushing any new changes.
-- [ ] Submit a pull-request to merge <firstName-lastName> branch into main. **Please don't merge your own pull request and make sure you are on your own repo**
-- [ ] Check codegrade for automated feedback.
-- [ ] Check codegrade on Monday following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here]()
-- [ ] Any changes pushed to your <firstName-lastName> branch will resubmited to codegrade if pushed before the sprint challenge deadline. Changes after the deadline will not be reviewed.
+- [x] Submit via Codegrade by commiting and pushing any new changes.
+- [x] Submit a pull-request to merge <firstName-lastName> branch into main. **Please don't merge your own pull request and make sure you are on your own repo**
+- [x] Check codegrade for automated feedback.
+- [x] Check codegrade on Monday following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here]()
+- [x] Any changes pushed to your <firstName-lastName> branch will resubmited to codegrade if pushed before the sprint challenge deadline. Changes after the deadline will not be reviewed.
 
 ## Interview Questions
 
@@ -111,8 +111,20 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a stateful and a functional component?
 
+-The differences between a stateful & functional component, to start, a sateful component will render data onto the screen. Whereas a functional component is meant to handle a task or display a UI.
+
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+
+-A "componentWillMount" function is called when a component is first rendered. A "componentWillUpdate" function will re-render the function based on a specific set of paramaters.
 
 3. Define stateful logic.
 
+-Stateful Logic is any code that is storing or using state, and updating the current state with different states / values.
+
 4. What are the three step of creating a successful test? What is done in each phase?
+
+-Arrange: Rendering the component, you stage where the inputs are set and sets up test cases.
+
+-Act: Setting up your consts & userEvents / whatever the behavior of the target is supposed to be.
+
+-Assert: What is supposed to happen / using expect messages to check if specific elements have rendered correclty.
