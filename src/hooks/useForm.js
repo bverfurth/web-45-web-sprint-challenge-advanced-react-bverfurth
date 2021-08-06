@@ -3,4 +3,11 @@ import { useState } from "react";
 
 export const useForm = { initialValue } => {
     const [value, setValue] = useState(initialValue);
+
+    const handleChange = (e) => {
+        setValue((priorValue) => ({
+            ...priorValue,
+            [e.target.name]: e.target.value,
+        }));
+    };
 }
