@@ -23,13 +23,14 @@ test("form shows success message on submit with form details", () => {
   const checkoutButton = document.querySelector("button");
 
   //Act
-  userEvent.type();
-  userEvent.type();
-  userEvent.type();
-  userEvent.type();
-  userEvent.type();
-  userEvent.type();
-  userEvent.click();
+  userEvent.type(firstNameValue, "Philip");
+  userEvent.type(lastNameValue, "Sherman");
+  userEvent.type(addressValue, "42 Wallaby Way");
+  userEvent.type(cityValue, "Sydney");
+  userEvent.type(stateValue, "Australia");
+  userEvent.type(zipValue, "1291");
+  userEvent.click(checkoutButton);
 
   //Assert
+  const completeMessage = document.querySelector();
 });
