@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "../hooks/useForm";
 
 const initialValue = {
@@ -74,7 +74,7 @@ const CheckoutForm = (props) => {
           </p>
           <p>{values.address}</p>
           <p>
-            {values.city}, {values.state} {values.zip}
+            {values.city} {values.state} {values.zip}
           </p>
         </div>
       )}
