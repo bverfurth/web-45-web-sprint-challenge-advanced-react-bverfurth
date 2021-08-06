@@ -2,15 +2,16 @@
 import { useState } from "react";
 
 export const useForm = (initialValue) => {
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [value, setValue] = useState(initialValue);
 
   const handleChange = (e) => {
-    setValue((priorValue) => ({
-      ...priorValue,
-      [e.target.name]: e.target.value,
-    }));
+    setValue({ ...value, [e.target.name]: e.target.value });
   };
-  return [value, handleChange];
-};
 
-export default useForm;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowSuccessMessage(true);
+  };
+  return [value, handleChange, handleSubmit, showSuccessMessage];
+};
