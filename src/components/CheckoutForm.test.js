@@ -10,5 +10,19 @@ test("form header renders", () => {
 });
 
 test("form shows success message on submit with form details", () => {
-  render(<CheckoutForm />);
+    render(<CheckoutForm />);
+    
+    //Arrange
+    const firstNameValue
+    const lastNameValue
+    const addressValue
+    const cityValue
+    const stateValue
+    const zipValue
+    const checkoutButton
+
+    //Act
+
+    //Assert
+
 });
