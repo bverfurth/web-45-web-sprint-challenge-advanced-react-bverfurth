@@ -9,9 +9,14 @@ export default class PlantList extends Component {
   //   - set the returned plants array to this.state.plants
 
   componentDidMount() {
-    axios.get('http://localhost:3333/plants')
-      .then(res => {
-        
+    console.log("Component Did Mount");
+    axios
+      .get("http://localhost:3333/plants")
+      .then((res) => {
+        this.setState((priorState) => ({ ...priorState, plants: res.data }));
+      })
+      .catch((error) => {
+        console.log("Component Error at componentDidMount");
       });
   }
 
