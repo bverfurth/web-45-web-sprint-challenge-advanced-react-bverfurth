@@ -10,19 +10,18 @@ test("form header renders", () => {
 });
 
 test("form shows success message on submit with form details", () => {
-    render(<CheckoutForm />);
-    
-    //Arrange
-    const firstNameValue
-    const lastNameValue
-    const addressValue
-    const cityValue
-    const stateValue
-    const zipValue
-    const checkoutButton
+  render(<CheckoutForm />);
 
-    //Act
+  //Arrange
+  const firstNameValue = screen.getByLabelText();
+  const lastNameValue = screen.getByLabelText();
+  const addressValue = screen.getByLabelText();
+  const cityValue = screen.getByLabelText();
+  const stateValue = screen.getByLabelText();
+  const zipValue = screen.getByLabelText();
+  const checkoutButton = document.querySelector("button");
 
-    //Assert
+  //Act
 
+  //Assert
 });
